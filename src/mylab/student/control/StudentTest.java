@@ -12,12 +12,9 @@ public class StudentTest {
 
         System.out.println(student.getName() + " / " + student.getMajor() + " / " + student.getGrade() + "학년");
         System.out.println("5학년으로 변경");
-
-        // setGrade()가 예외를 발생시킬 수 있으므로 try-catch 문으로 감싸야 함
         try {
             student.setGrade(5);
         } catch (InvalidGradeException e) {
-            // 발생한 예외 객체로부터 메시지를 받아와 출력
             System.out.println(e.getMessage());
         }
     }
