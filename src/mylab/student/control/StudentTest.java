@@ -1,11 +1,8 @@
 package mylab.student.control;
 
-import mylab.student.exception.InvalidGradeException; // 추가된 import
+import mylab.student.exception.InvalidGradeException;
 import mylab.student.entity.Student;
 
-/**
- * Student 클래스의 기능을 테스트하는 클래스 (Control)
- */
 public class StudentTest {
     public static void main(String[] args) {
         Student student = new Student("20240001", "김민수", "컴퓨터공학", 3);
